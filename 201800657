@@ -1,3 +1,12 @@
+ID-201800657
+name-komaldeep kaur
+Date:28-nov-2019
+Name of work:Pokemon Game
+Language:PHP
+https://github.com/Komal1308/Pokemon-game/blob/master/201800657
+
+
+
 <?php
 
 class Pokemon
@@ -34,4 +43,5 @@ for($counter=1; $counter<6; $counter++){
 
 echo "fini";
 ?>
+
 
