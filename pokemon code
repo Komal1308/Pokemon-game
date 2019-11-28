@@ -1,0 +1,72 @@
+<?php
+
+class Pokemon
+{
+// Declare properties
+public $PokemonName;
+public$pokemonType;
+
+// Method to Attack
+    public function doPokemonAttack(){
+        return (rand(1,100));
+    }
+}
+$PokemonNames=array('Bulbasaur dagger','Ivysaur',
+'venusaur',
+'Charmanderdagger',
+'Charmeleon',
+'Charizard',
+'Squirtledagger',
+'Wartortle',
+'Blastoise',
+'Caterpie',
+'Metapod',
+'Butterfree',
+'Weedle',
+'Kakuna',
+'Beedrill',
+'Pidgey',
+'Pidgeotto',
+'Pidgeot',
+'Rattata',
+'Raticate',
+'Spearow',
+);
+
+$PokemonType=array('Fire','water','psychic','charmander','ground','electric'
+);
+$Pokeballs = array();
+for($counter=1; $counter<=20; $counter++){
+    $Pikachu = new Pokemon;
+    $Pikachu->PokemonName=array-pop($PokemonName);
+
+   $Pikachu->PokemonType=$PokemonType[rand(0,sizeof($PokemonType)-1)];
+$Pokeballs[]=$Pikachu;
+
+// var_dump($Pokeballs);
+
+// Part One: #todo: Write code to perform 10 Battles
+// for each battle, randomly pull 2 Pokemon out of the Pokeball
+// let them each do their Attack
+// Strongest Attack Wins!
+// Output the contestants and the Winners!!!
+// POKEMON: I CHOOSE YOU!
+
+
+for ($battlecount=1;$battlescount<=10; $battlecount++){
+// randomly pull 2 Pokemon out of the pokeball: array name is $Pokeballs
+
+echo"BATTLE:".$battlecount;
+$pokemon1=array_pop($pokeballs);
+$pokemon2=array_pop($Pokeballs);
+
+
+$pokemon1_attackStrength=$pokemon1->doPokemonAttack();
+$pokemon2_attackStrength=$pokemon2->doPokemonAttack();
+
+echo "Pokemon 1 attack Strength:"$pokemon1_attackStrength."\r\n";
+echo "Pokemon 2 attack Strength:"$pokemon2_attackStrength."\r\n";
+}
+
+// part three: #todo: create a POKEDEX to store the results of BATTLES 
+echo"fini";
